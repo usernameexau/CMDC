@@ -1,0 +1,108 @@
+ header {
+     background-color: #081bee;
+     background-position: center;
+     border-radius: 12px;
+     padding: 30% auto;
+     color: #fff;
+     text-align: center;
+     margin: 10;
+     background-image: url('vieux\ gama.png');
+     background-size: 200px 176px;
+     background-repeat: no-repeat;
+     background-position: left top;
+ }
+ 
+ body {
+     font-family: Arial, sans-serif;
+     text-align: center;
+     margin: 20 auto;
+     background-color: #f0f0f3;
+     color: #333333;
+     background-image: url('public\ 1.png'), url('public\ 2.png');
+     background-position: left top, right;
+     background-repeat: no-repeat, no-repeat;
+     background-size: 300px 600px, 200px 500px;
+     animation: fadeSlideUp 5.0s ease forwards;
+ }
+ 
+ .choix-container {
+     display: flex;
+     justify-content: center;
+     gap: 30px;
+     flex-wrap: wrap;
+ }
+ 
+ .choix-bouton {
+     background-color: rgb(255, 255, 255);
+     border: 2px solid #081bee;
+     border-radius: 12px;
+     width: 199px;
+     padding: 20px;
+     cursor: pointer;
+     transition: transform 0.9s ease, box-shadow 0.9s ease;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     animation: fadeSlideUp 3.7s ease forwards;
+     opacity: 0;
+ }
+ 
+ .choix-bouton:hover {
+     transform: scale(1.09);
+     box-shadow: 0 10px 200px rgba(8, 8, 236, 0.5);
+     transition: transform 5.9s ease, box-shadow 0.9s ease;
+ }
+ 
+ .papa img {
+     background-repeat: no-repeat;
+     background-position: right;
+     background-size: 30px;
+     image-resolution: 200px;
+     image-orientation: 0deg;
+     border-image-width: 100px;
+     width: 10%;
+     border-radius: 10px;
+     animation: fadeSlideUp 0.7s ease forwards;
+ }
+ 
+ .choix-bouton img {
+     width: 100%;
+     height: 120px;
+     object-fit: cover;
+     border-radius: 8px;
+ }
+ 
+ .choix-bouton h3 {
+     margin: 10px 0 0;
+     font-size: 18px;
+     color: #333;
+ }
+ 
+ .section-cachee {
+     display: none;
+     margin-top: 40px;
+     padding: 20px;
+     background-color: #f0f0f0;
+     border-radius: 10px;
+ }
+ 
+ footer {
+     background-color: bisque;
+     margin: 0;
+     width: 100% auto;
+     height: 100% auto;
+     text-decoration-color: #ccc;
+ }
+ 
+ button:hover {
+     background-color: #0056b3;
+ }
+ 
+ @keyframes fadeSlideUp {
+     0% {
+         opacity: 8;
+         transform: translateY(20px);
+     }
+     100% {
+         opacity: 8;
+         transform: translateY(0);
+     }
+ }
